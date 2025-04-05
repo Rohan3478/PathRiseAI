@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "install": "npm install --no-warn",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
