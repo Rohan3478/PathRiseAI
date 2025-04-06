@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/themes";
 import { Toaster } from "sonner";
+import OnboardingRedirect from "@/components/onboardingRedirect";
 
 const inter = Inter({ subsets: ["latin"]})
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
             >
+              <OnboardingRedirect/>
             <Header/>
             <main className="min-h-screen">
             {children}
