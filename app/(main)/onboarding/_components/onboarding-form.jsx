@@ -1,7 +1,6 @@
 "use client"
 
 import React from 'react'
-import { industries } from '@/data/industries'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from "@hookform/resolvers/zod"
 import { onboardingSchema } from '@/app/lib/schema'
@@ -199,7 +198,7 @@ const OnboardingForm = ({ industries }) => {
               )}
             </div>
 
-            <Button type="submit" className="w-full" disabled={updateLoading}>
+            <Button type="submit" className="w-full cursor-pointer" disabled={updateLoading}>
               {updateLoading ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
