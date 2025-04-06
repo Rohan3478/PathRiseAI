@@ -188,7 +188,7 @@ export default function Home() {
               <Button 
               size="lg"
               variant="secondary"
-              className="h-11 mt-5 animate-bounce"
+              className="h-11 mt-5 animate-bounce cursor-pointer"
               >
                 Start Your Journey Today <ArrowRight className="ml-2 h-4 w-4"/>
               </Button>
